@@ -6,7 +6,9 @@
 
 ## Human contribution and AI generation
 
-I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials.
+The proofs in this repository were generated almost entirely by AI. My role was primarily to prompt the models and request further work, audits, and revisions. I barely contributed any mathematical insights, proof ideas, or proof strategies.
+
+The proofs have been reviewed by AI. Due to limited computational resources, we have only been able to verify parts of them in Lean. Where provided, this verification covers the formalized statements and is conditional on explicitly stated assumptions. These checks do not guarantee that the complete proofs are correct or free of gaps. Please use the results with caution.
 
 ## Result and scope
 
@@ -63,7 +65,7 @@ It specified the model and clock, quenched worst-case quantifiers, a primary tar
 
 ## How the proof was generated
 
-This was **almost entirely AI-generated proof development, with human prompting and repeated AI audits**. Qiang Wu supplied the detailed prompt, pressed for a proof after partial results, and requested a fresh audit and PDF. The AI developed and wrote the argument, using parallel agents for separate approaches and critical checks. The recovered record does not establish a verified model/version label, so none is assigned here.
+This was **almost entirely AI-generated proof development, with human prompting and repeated AI audits**. The user supplied the detailed prompt, pressed for a proof after partial results, and requested a fresh audit and PDF. The AI developed and wrote the argument, using parallel agents for separate approaches and critical checks. The recovered record does not establish a verified model/version label, so none is assigned here.
 
 The recorded work rounds were:
 
