@@ -1,6 +1,10 @@
 # Initial full-RSB interval for SK at positive temperature
 
-**Initial development: July 14, 2026 (UTC).** This folder preserves the revised 34-page reference edition of an AI-generated mathematical argument developed in user-guided ChatGPT sessions, together with its October 6, 2026 recheck.
+**Initial development: July 14, 2026 (UTC).** This folder preserves the revised 34-page reference edition of an AI-generated mathematical argument developed through prompts to AI models in ChatGPT sessions, together with its October 6, 2026 recheck.
+
+## Human contribution and AI generation
+
+I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials.
 
 ## Result
 
@@ -38,7 +42,7 @@ The visible production sequence was:
 
 Thus the main recorded chain contains **one proposal response and five PDF-production/revision responses**, following the initial v1 audit, with additional audit exchanges between them. The three substantive revision rounds repaired mathematical details; the last production round assembled the readable edition. The archived manuscript is therefore not a one-shot finished proof. “Several rounds of generation, audit, and revision” describes the process more precisely than “few-shot.” These are visible conversation turns, not a count of underlying model calls; their timestamps do not establish exact response or PDF completion times.
 
-The user's role was to supply the starting paper, set the strengthening target, request rigorous checking, relay audit feedback, and request revisions and clearer exposition. AI assistants proposed the argument, developed and checked its details, and generated the manuscripts. The record supports the description **AI-generated proof development under human direction**, with repeated AI-assisted audits and corrections.
+The user's prompting included supplying the starting paper, requesting the strengthening target and rigorous checking, relaying AI audit feedback, and requesting revisions and clearer exposition. AI assistants proposed the mathematical strategy, developed and checked the argument, and generated the manuscripts. This was **almost entirely AI-generated proof development, with human prompting**, followed by repeated AI audits and corrections.
 
 ## Comparison with Lopatto's v2 and v3
 

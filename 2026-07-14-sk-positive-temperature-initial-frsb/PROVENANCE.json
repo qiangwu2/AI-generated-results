@@ -21,5 +21,12 @@
     "https://arxiv.org/abs/2607.11756v1",
     "https://arxiv.org/abs/1303.3573",
     "https://arxiv.org/abs/1504.02731"
-  ]
+  ],
+  "human_contribution": {
+    "reported_by": "Qiang Wu",
+    "reported_date": "2026-10-07",
+    "date_timezone": "America/Los_Angeles",
+    "basis": "Direct statement by Qiang Wu for this repository disclosure.",
+    "statement": "I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials."
+  }
 }
