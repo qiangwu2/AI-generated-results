@@ -1,8 +1,8 @@
 # Cutoff for SK Glauber dynamics at fixed inverse temperature below 1/3
 
-**Developed September 23, 2026 (Pacific time).** This folder preserves the 10-page proof manuscript, its LaTeX source and audit materials, and the original research prompt from the Codex chat **“Prove SK Glauber cutoff.”** The completed proof and revised PDF were delivered on September 24 in UTC; the manuscript and folder use the local September 23 date.
+**Developed September 23, 2026 (Pacific time).** This folder preserves the 10-page proof manuscript and the original research prompt from the Codex chat **“Prove SK Glauber cutoff.”** The completed proof and revised PDF were delivered on September 24 in UTC; the manuscript and folder use the local September 23 date.
 
-[Read the manuscript](sk_cutoff_proof.pdf) · [Source, audits, and numerical checks](sk_cutoff_source.zip) · [Original prompt](ORIGINAL-PROMPT.txt) · [September 23 audit](AUDIT-2026-09-23.md)
+[Read the manuscript](sk_cutoff_proof.pdf) · [Original prompt](ORIGINAL-PROMPT.txt)
 
 ## Human contribution and AI generation
 
@@ -10,7 +10,7 @@ The proofs in this repository were generated almost entirely by AI. My role was 
 
 I take neither credit nor responsibility for these results, as I have not had time to carefully check the proofs myself.
 
-The results have undergone several rounds of AI auditing and revision. Within the scope of those reviews, no obvious unresolved substantive errors or gaps were identified. Known local corrections and checks that remain incomplete are documented in each result's audit notes.
+The results have undergone several rounds of AI auditing and revision. Within the scope of those reviews, no obvious unresolved substantive errors or gaps were identified. Known local corrections and checks that remain incomplete are summarized in each result's README.
 
 Due to limited computational resources, we have only been able to verify parts of them in Lean. Where provided, this verification covers the formalized statements and is conditional on explicitly stated assumptions. These checks do not guarantee that the complete proofs are correct or free of gaps. Please use the results with caution.
 
@@ -84,19 +84,15 @@ These are recorded turn start/completion times, not exact timestamps for individ
 
 ## Audit status
 
-The contemporaneous [September 23 audit report](AUDIT-2026-09-23.md) records **no remaining mathematical gap found in the revised proof on the stated range**. It describes a main-agent review, three agent reviewers with different assignments, and a review of the LaTeX transcription. The checked points include the exact evolution identity, global derivative estimates, square completion, repeated eigenvalues, singular starts, moving-reference chi-square contraction, worst-case quantifiers, disorder estimates, and clock normalization.
+The contemporaneous September 23 audit records **no remaining mathematical gap found in the revised proof on the stated range**. It describes a main-agent review, three agent reviewers with different assignments, and a review of the LaTeX transcription. The checked points include the exact evolution identity, global derivative estimates, square completion, repeated eigenvalues, singular starts, moving-reference chi-square contraction, worst-case quantifiers, disorder estimates, and clock normalization.
 
-Two finite-state implementations tested the identity and bounds on arbitrary laws and evolved endpoint laws; the report records 400 identity tests in one implementation and 500 arbitrary-law plus 300 evolved-law tests in the other, with no tested estimate failing. The source archive contains those programs, recorded numerical results, and the detailed audit reports.
+Two finite-state implementations tested the identity and bounds on arbitrary laws and evolved endpoint laws; the report records 400 identity tests in one implementation and 500 arbitrary-law plus 300 evolved-law tests in the other, with no tested estimate failing.
 
-This is a record of mathematical audits by AI agents, **not a guarantee of zero errors, independent human peer review, or a Lean formalization**. Finite-state numerical checks support the algebraic review but do not prove the asymptotic theorem. The present repository addition preserves the existing manuscript and reports; it is not a new full mathematical audit.
+This is a record of mathematical audits by AI agents, **not a guarantee of zero errors, independent human peer review, or a Lean formalization**. Finite-state numerical checks support the algebraic review but do not prove the asymptotic theorem. The repository preserves the existing manuscript; this summary is not a new full mathematical audit.
 
-## Files and provenance
+## Files
 
 - `sk_cutoff_proof.pdf` — original revised 10-page manuscript, unchanged.
-- `sk_cutoff_source.zip` — original source bundle, unchanged: TeX, bibliography, three detailed audits, audit summary, two verification programs, and recorded results.
 - `ORIGINAL-PROMPT.txt` — original user-supplied research prompt, unchanged.
-- `AUDIT-2026-09-23.md` — original contemporaneous audit summary, unchanged.
-- `PROVENANCE.json` — chat reference, date conventions, timeline, and source-file hashes.
-- `SHA256SUMS.txt` — checksums of this folder's files other than the checksum file itself.
 
-Archived in this repository on October 6, 2026 (Pacific time; October 7 UTC). Hashes establish correspondence with the recovered local files; they are not mathematical correctness certificates.
+Archived in this repository on October 6, 2026 (Pacific time; October 7 UTC).

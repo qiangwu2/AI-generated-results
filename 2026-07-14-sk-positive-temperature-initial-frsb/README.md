@@ -8,7 +8,7 @@ The proofs in this repository were generated almost entirely by AI. My role was 
 
 I take neither credit nor responsibility for these results, as I have not had time to carefully check the proofs myself.
 
-The results have undergone several rounds of AI auditing and revision. Within the scope of those reviews, no obvious unresolved substantive errors or gaps were identified. Known local corrections and checks that remain incomplete are documented in each result's audit notes.
+The results have undergone several rounds of AI auditing and revision. Within the scope of those reviews, no obvious unresolved substantive errors or gaps were identified. Known local corrections and checks that remain incomplete are summarized in each result's README.
 
 Due to limited computational resources, we have only been able to verify parts of them in Lean. Where provided, this verification covers the formalized statements and is conditional on explicitly stated assumptions. These checks do not guarantee that the complete proofs are correct or free of gaps. Please use the results with caution.
 
@@ -71,21 +71,18 @@ The initial argument is recorded on July 14, while v2 and v3 were submitted on J
 
 The fresh recheck found **no fatal mathematical error or unresolved substantive gap in the main initial-interval argument**. It covered the analytic estimates, slope-cone preservation and closure, strict first-gap inequality, marginality, absence of an atom at zero, and exclusion of small support gaps.
 
-The historical PDF still needs four local corrections, documented in [the audit report](AUDIT-2026-10-06.txt):
+The historical PDF still needs four local corrections:
 
 1. Require positive curvature explicitly in the general slope-coordinate setup; strict convexity alone is insufficient.
 2. Supply the weighted derivative estimate omitted from the inverse-function justification in Appendix A.
 3. Restrict the finite-profile construction so that a decrease to parameter zero is the final operation.
 4. Correct the endpoint wording in the citation of Auffinger–Chen’s smoothness theorem.
 
-The audit explains why these repairs use assumptions or estimates already available and preserve the main conclusion. They have **not** been silently inserted into the archived PDF. This is an AI-assisted mathematical audit, not formal verification or external peer review, and it does not certify the file as literally error-free.
+The audit found that these repairs use assumptions or estimates already available and preserve the main conclusion. They have **not** been silently inserted into the archived PDF. This is an AI-assisted mathematical audit, not formal verification or external peer review, and it does not certify the file as literally error-free.
 
 ## Files
 
 - [FRSB_initial_interval_readable_latest.pdf](FRSB_initial_interval_readable_latest.pdf) — the original 34-page readable reference edition, unchanged.
-- [AUDIT-2026-10-06.txt](AUDIT-2026-10-06.txt) — the detailed recheck, including exact locations and repairs for the four local issues. Its description of browser captures records the evidence available when the audit was completed; the PDF binary was recovered afterward.
-- [PROVENANCE.json](PROVENANCE.json) — edition identity, archive dates, and checksums.
-- [SHA256SUMS.txt](SHA256SUMS.txt) — checksums for the archived files.
 
 ## Sources and attribution
 

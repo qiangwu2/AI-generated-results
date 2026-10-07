@@ -10,7 +10,7 @@ The proofs in this repository were generated almost entirely by AI. My role was 
 
 I take neither credit nor responsibility for these results, as I have not had time to carefully check the proofs myself.
 
-The results have undergone several rounds of AI auditing and revision. Within the scope of those reviews, no obvious unresolved substantive errors or gaps were identified. Known local corrections and checks that remain incomplete are documented in each result's audit notes.
+The results have undergone several rounds of AI auditing and revision. Within the scope of those reviews, no obvious unresolved substantive errors or gaps were identified. Known local corrections and checks that remain incomplete are summarized in each result's README.
 
 Due to limited computational resources, we have only been able to verify parts of them in Lean. Where provided, this verification covers the formalized statements and is conditional on explicitly stated assumptions. These checks do not guarantee that the complete proofs are correct or free of gaps. Please use the results with caution.
 
@@ -91,14 +91,11 @@ The October 6 Pacific / October 7 UTC review of the exact archived 46-page PDF e
 
 Complete verification still requires the structural constructions and their applications to be checked together, including marked Gaussian stationarity, canonical-centre compatibility and preservation, the marked identities and enrichment, the common hierarchy, conditional row independence, and finite-cascade recovery. Unfinished formalization of these steps is not itself a demonstrated mathematical gap. Existing component checks do not certify the full formula.
 
-See [the audit-status summary](AUDIT-STATUS-2026-10-07.txt) for the precise boundary of the available assessment. This archive does not claim completed formal verification, external peer review, or a zero-error certificate.
+This archive does not claim completed formal verification, external peer review, or a zero-error certificate.
 
 ## Files
 
 - [viana_bray_integrated.pdf](viana_bray_integrated.pdf) — unchanged 46-page integrated manuscript.
-- [AUDIT-STATUS-2026-10-07.txt](AUDIT-STATUS-2026-10-07.txt) — summary of existing review records, not a new whole-paper audit.
 - [ORIGINAL-PROMPT.txt](ORIGINAL-PROMPT.txt) — the complete September 20 research brief, preserved verbatim.
-- [PROVENANCE.json](PROVENANCE.json) — edition identity, chronology, original-prompt identity and audit boundaries.
-- [SHA256SUMS.txt](SHA256SUMS.txt) — checksums for this package.
 
 The manuscript contains its bibliography and attribution of mathematical inputs. Its inclusion here records AI-generated research and its review status; it does not establish independence from prior literature or certify novelty.
