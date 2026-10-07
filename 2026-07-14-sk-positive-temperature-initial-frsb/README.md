@@ -7,7 +7,7 @@
 For the zero-field Sherrington–Kirkpatrick model, with normalization $\xi(q)=\beta^2q^2/2$, the manuscript establishes that for every finite inverse temperature $\beta>1$ there is $q_\beta>0$ such that
 
 $$
-[0,q_\beta]\subseteq\operatorname{supp}\mu_\beta.
+[0,q_\beta]\subseteq\mathrm{supp}\,\mu_\beta.
 $$
 
 It also derives no atom at zero, $\beta u_{xx}(0,0)=1$, $u_{xxxx}(0,0)<0$, and a smooth Parisi distribution function on $[0,q_\beta)$. The scope is an **initial interval** in the support at positive temperature. The manuscript does not establish connectedness of the entire support or a zero-temperature theorem.

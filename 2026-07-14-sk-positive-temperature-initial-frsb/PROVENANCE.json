@@ -1,0 +1,25 @@
+{
+  "title": "From Infinite Support to an Initial Full-RSB Interval",
+  "edition": "Readable reference edition with a novelty and dependency map",
+  "pdf_filename": "FRSB_initial_interval_readable_latest.pdf",
+  "pdf_pages": 34,
+  "pdf_bytes": 1599161,
+  "pdf_sha256": "dd9eb40346221b23938382c7b45dabce9ad8c59d1a143359b0e83feffacaf633",
+  "printed_manuscript_date": "2026-07-14",
+  "initial_argument_date_utc": "2026-07-14",
+  "readable_edition_request_turn_utc": "2026-07-14T23:53:12.312Z",
+  "timestamp_scope": "Conversation turn start, not an exact PDF completion timestamp or public publication date.",
+  "archive_and_audit_date_pacific": "2026-10-06",
+  "archive_and_audit_date_utc": "2026-10-07",
+  "pdf_modified_for_archive": false,
+  "recovery_verification": "All 34 page texts match the frozen browser capture after normalizing whitespace and mu/omega Unicode glyph variants.",
+  "reviewed_capture_sha256": "5ea275dda45c96c7a84143b260b4082eead0e8992aa993139569f5f563d0319b",
+  "audit_filename": "AUDIT-2026-10-06.txt",
+  "audit_sha256": "e16ecf9dcdab831b73f7494f8f8bdba9e60bfde62eb33a2f9099c3e7b8b68fd5",
+  "status": "No fatal error or unresolved substantive gap found in the main initial-interval argument; four local corrections remain in the archived PDF.",
+  "source_attribution": [
+    "https://arxiv.org/abs/2607.11756v1",
+    "https://arxiv.org/abs/1303.3573",
+    "https://arxiv.org/abs/1504.02731"
+  ]
+}
