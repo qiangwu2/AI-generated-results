@@ -33,6 +33,34 @@ These records date the integrated edition, **not the first discovery of its unde
 
 That conversation contains one audit response and three integration or exposition revision responses. Earlier proof development preceded it and has not been fully reconstructed here. These are visible responses, not a count of all model calls or a complete account of how the original proof strategy arose.
 
+## Comparison with OpenAI's proof
+
+This comparison uses OpenAI's **36-page [full manuscript, *The Mézard–Parisi formula for diluted spin glasses*](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/paper.pdf)**, dated September 23, 2026. OpenAI also released an abridged reasoning summary; the full manuscript is the reference here. Links below identify the version compared.
+
+**Both manuscripts claim the same pressure formula on their shared Viana–Bray setting. OpenAI states a broader model theorem; the main arguments for the reverse inequality are substantially different.**
+
+| Aspect | This 46-page manuscript | OpenAI's manuscript |
+| --- | --- | --- |
+| Interaction class | Two-spin Viana–Bray with bounded symmetric couplings | Even-arity interactions satisfying the Panchenko–Talagrand factorization and positivity hypotheses |
+| Couplings and field | Bounded couplings and a fixed deterministic dimensionless field | First-moment integrability; independent identically distributed random fields are allowed |
+| Named models | Viana–Bray | Viana–Bray, diluted even-spin models, and soft even-*K* SAT |
+| Variational statement | Infimum over all finite cascade depths | Infimum over all finite hierarchy depths |
+| Zero temperature | No separately stated corollary | Expected ground-state value as a limit of the positive-temperature variational values |
+
+For scope, compare this manuscript's **Theorem 1.1 (p. 2)** with OpenAI's **Theorem 2.1 (p. 4)** and **Corollaries 10.1–10.3 (pp. 34–35)**; see its [model and hypotheses](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/build/sections/model.tex) and [named-model consequences](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/build/sections/consequences.tex). Neither formula requires attainment at a finite depth. OpenAI's zero-temperature corollary takes a temperature limit; it does not introduce a separate explicit zero-temperature order-parameter formula.
+
+**Shared starting point.** Both use the interpolation upper bound and address the difficulty that pair overlaps alone do not determine the spin patterns needed by diluted cavity terms. Their task for the reverse inequality is to recover admissible hierarchical messages without losing the pressure.
+
+**This manuscript's route: exact structure of a selected auxiliary law.** Section 3 selects a stationary minimizing spin law. Sections 4–6 enlarge its feature family using actual cluster centres, products, and iterated centres, together with Gaussian stationarity and marked Ghirlanda–Guerra identities. Theorem 7.1 (p. 38) claims exact conditional independence of site rows given the enriched master genealogy. Proposition 8.1 (pp. 42–44) then recovers the cavity value through finite cascade approximations. The structural statement concerns this specially selected auxiliary minimizer. Its master overlap contains enriched feature information; it is not a claim that the ordinary pair overlap determines every unperturbed physical Gibbs state.
+
+**OpenAI's route: averaged control on finite auxiliary trees.** Bounded marked Poisson perturbations produce identities for prescribed replica trees. Shifting their internal branching depths controls the small coefficients in those identities. A conditional-covariance induction gives multioverlap concentration averaged over branching depths, enough to replace site labels by independent hierarchical messages in the cavity calculation. The limit in system size is taken at fixed hierarchy depth, followed by increasing depth. See **Sections 6–8**, especially **Theorem 7.1** and **Proposition 8.3**, and the [proof outline](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/build/sections/overview.tex).
+
+Thus this manuscript pursues an exact representation of an enriched auxiliary spin law, whereas OpenAI obtains the averaged finite-tree estimates needed for the pressure comparison. These structural outputs concern different auxiliary objects; they are not a simple stronger-versus-weaker theorem comparison.
+
+**Trial notation.** This manuscript uses magnetizations and explicitly weighted cascades; OpenAI uses effective fields and successive power means. The message conversion is $u=\tanh x$; boundary magnetizations $u=\pm1$ correspond to limits $x\to\pm\infty$. Root randomness is another parametrization difference: this manuscript's Proposition 2.5 (pp. 9–10) explains how an extra level with exponent tending to zero absorbs independent site-root marks. Literal fixed-depth trial classes should not be identified without these adjustments.
+
+**Chronology and review status.** The recovered integrated edition here is dated September 21; OpenAI's manuscript is dated September 23. These document dates alone establish neither first discovery nor public priority or independence. This comparison describes statements and proof mechanisms, not a new complete audit of either argument. The audit status of the archived manuscript remains as stated below.
+
 ## Audit record and limits
 
 The favorable September 21 audit concerned the **59-page precursor**. It should not be treated as a separate end-to-end certification of this later PDF.
