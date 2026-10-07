@@ -34,7 +34,7 @@
   "later_attachment_date_pacific": "2026-10-06",
   "history_basis": "Recovered conversation records and PDF metadata. Response completion timestamps do not establish first discovery or public priority. The recovered conversation begins with an existing manuscript.",
   "generation": {
-    "description": "Iterative AI proof development under human direction. The recovered conversation shows auditing, integration, and exposition revisions. Earlier development is not fully reconstructed.",
+    "description": "Iterative AI proof development under human direction. The original September 20 research brief is preserved verbatim. The recovered September 21 conversation shows auditing, integration, and exposition revisions; the intervening development sequence is not fully reconstructed.",
     "audit_responses_in_recovered_conversation": 1,
     "integration_or_exposition_revision_responses_in_recovered_conversation": 3,
     "one_shot_finished_proof": false,
@@ -61,5 +61,17 @@
     "reference_pdf_sha256": "f415bacf0f91bf5aa188cb80f95e00fac1142996fe70d3d8c5c1372b3262a8e5",
     "basis": "Full manuscript and primary LaTeX sources, compared with the unchanged 46-page integrated manuscript.",
     "scope": "Theorem statements, proof mechanisms, trial parametrizations and chronology; not an end-to-end correctness audit of either proof."
+  },
+  "original_prompt": {
+    "filename": "ORIGINAL-PROMPT.txt",
+    "title": "Research task: Prove the full Mezard–Parisi formula for the Viana–Bray model",
+    "date_pacific": "2026-09-20",
+    "date_basis": "Earliest recorded turn of the original development conversation; exact message-send time not certified.",
+    "role": "Original proof-generation research brief, preceding the September 21 audit and integration.",
+    "preserved_verbatim": true,
+    "bytes": 11674,
+    "sha256": "753aebb2c40514fe9a450e65baf6447774e4402ebc3a960cac1cee829984a741",
+    "source_type": "Original pasted-text attachment identified in the development conversation.",
+    "recovered_utc_date": "2026-10-07"
   }
 }
