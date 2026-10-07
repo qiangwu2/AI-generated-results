@@ -49,5 +49,17 @@
     "boundary": "No counterexample or invalid inference established. Pending formalization and application obligations do not themselves demonstrate a mathematical gap. Precursor audit is not a separate full audit of this edition.",
     "completed_formal_verification_of_full_formula": false,
     "separate_older_46_page_scope_audited_draft": true
+  },
+  "comparison": {
+    "added_utc_date": "2026-10-07",
+    "title": "The Mézard–Parisi formula for diluted spin glasses",
+    "author": "OpenAI",
+    "manuscript_date": "2026-09-23",
+    "pages": 36,
+    "reference_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/paper.pdf",
+    "source_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "reference_pdf_sha256": "f415bacf0f91bf5aa188cb80f95e00fac1142996fe70d3d8c5c1372b3262a8e5",
+    "basis": "Full manuscript and primary LaTeX sources, compared with the unchanged 46-page integrated manuscript.",
+    "scope": "Theorem statements, proof mechanisms, trial parametrizations and chronology; not an end-to-end correctness audit of either proof."
   }
 }
