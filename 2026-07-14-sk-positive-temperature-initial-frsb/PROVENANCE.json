@@ -23,10 +23,11 @@
     "https://arxiv.org/abs/1504.02731"
   ],
   "human_contribution": {
-    "reported_by": "Qiang Wu",
+    "reported_by": "Repository owner",
     "reported_date": "2026-10-07",
     "date_timezone": "America/Los_Angeles",
-    "basis": "Direct statement by Qiang Wu for this repository disclosure.",
-    "statement": "I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials."
+    "basis": "Direct statement by the repository owner for this disclosure.",
+    "statement": "The proofs in this repository were generated almost entirely by AI. My role was primarily to prompt the models and request further work, audits, and revisions. I barely contributed any mathematical insights, proof ideas, or proof strategies.",
+    "verification_statement": "The proofs have been reviewed by AI. Due to limited computational resources, we have only been able to verify parts of them in Lean. Where provided, this verification covers the formalized statements and is conditional on explicitly stated assumptions. These checks do not guarantee that the complete proofs are correct or free of gaps. Please use the results with caution."
   }
 }
