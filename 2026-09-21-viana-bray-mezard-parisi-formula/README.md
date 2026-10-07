@@ -31,7 +31,19 @@ These records date the integrated edition, **not the first discovery of its unde
 
 **Iterative AI proof development under human direction, rather than a one-shot finished proof.** In the recovered conversation, the user supplied the existing manuscript, requested a critical audit, then requested integration and clearer explanations. The assistant audited the precursor and produced successive integrated and expository revisions.
 
-That conversation contains one audit response and three integration or exposition revision responses. Earlier proof development preceded it and has not been fully reconstructed here. These are visible responses, not a count of all model calls or a complete account of how the original proof strategy arose.
+That conversation contains one audit response and three integration or exposition revision responses. The original September 20 research brief has now been recovered and is preserved below; the complete sequence of intervening proof-development responses has not been reconstructed here. These are visible responses, not a count of all model calls or a complete account of how the original proof strategy arose.
+
+## Original research prompt
+
+The original proof-generation brief comes from the **September 20, 2026 (Pacific time)** development chat. The full text is preserved **verbatim** in [ORIGINAL-PROMPT.txt](ORIGINAL-PROMPT.txt), including the precise variational formula, six sections of research and audit requirements, and four primary mathematical references.
+
+Its title and opening mathematical request are:
+
+> Research task: Prove the full Mezard–Parisi formula for the Viana–Bray model
+
+> Establish the finite-connectivity Mezard–Parisi variational formula below, including the low-temperature regime and without any finite-RSB hypothesis on the limiting Gibbs measure.
+
+This is the original research request, preceding the September 21 audit, integration, and exposition prompts. September 21 dates the integrated edition archived here, rather than the beginning of the research attempt. The prompt's requirements describe what was requested; they do not certify that the resulting manuscript satisfies every requirement.
 
 ## Comparison with OpenAI's proof
 
@@ -75,7 +87,8 @@ See [the audit-status summary](AUDIT-STATUS-2026-10-07.txt) for the precise boun
 
 - [viana_bray_integrated.pdf](viana_bray_integrated.pdf) — unchanged 46-page integrated manuscript.
 - [AUDIT-STATUS-2026-10-07.txt](AUDIT-STATUS-2026-10-07.txt) — summary of existing review records, not a new whole-paper audit.
-- [PROVENANCE.json](PROVENANCE.json) — edition identity, chronology and audit boundaries.
+- [ORIGINAL-PROMPT.txt](ORIGINAL-PROMPT.txt) — the complete September 20 research brief, preserved verbatim.
+- [PROVENANCE.json](PROVENANCE.json) — edition identity, chronology, original-prompt identity and audit boundaries.
 - [SHA256SUMS.txt](SHA256SUMS.txt) — checksums for this package.
 
 The manuscript contains its bibliography and attribution of mathematical inputs. Its inclusion here records AI-generated research and its review status; it does not establish independence from prior literature or certify novelty.
