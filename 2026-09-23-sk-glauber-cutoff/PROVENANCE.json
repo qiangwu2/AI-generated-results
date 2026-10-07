@@ -33,7 +33,7 @@
       "completed_at_utc": "2026-09-24T02:12:05+00:00"
     }
   ],
-  "generation": "Detailed human research prompt; iterative AI proof search with human follow-ups; parallel AI reviews and finite-state numerical checks. Not a one-response finished proof.",
+  "generation": "User-supplied research prompt; almost entirely AI-generated proof development with human requests for continued work, audits, and revisions; parallel AI reviews and finite-state numerical checks. Not a one-response finished proof.",
   "audit": "September 23 report records no remaining mathematical gap found in revised proof for fixed 0<beta<1/3. No formal proof certificate or independent human peer review. No new full audit performed for this archival addition.",
   "lean_formalized": false,
   "unchanged_source_files": {
@@ -53,5 +53,12 @@
       "bytes": 5087,
       "sha256": "05652e861028adc4643065a5f8e9a80b9bfda5c6e80306ca320b4365dd91a135"
     }
+  },
+  "human_contribution": {
+    "reported_by": "Qiang Wu",
+    "reported_date": "2026-10-07",
+    "date_timezone": "America/Los_Angeles",
+    "basis": "Direct statement by Qiang Wu for this repository disclosure.",
+    "statement": "I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials."
   }
 }

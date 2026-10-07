@@ -4,6 +4,10 @@
 
 [Read the manuscript](sk_cutoff_proof.pdf) · [Source, audits, and numerical checks](sk_cutoff_source.zip) · [Original prompt](ORIGINAL-PROMPT.txt) · [September 23 audit](AUDIT-2026-09-23.md)
 
+## Human contribution and AI generation
+
+I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials.
+
 ## Result and scope
 
 The manuscript establishes quenched, worst-case total-variation cutoff for the **zero-field Sherrington–Kirkpatrick model**, for every fixed $0<\beta<1/3$, in continuous time with **rate one per site**. The couplings are symmetric, with zero diagonal and independent $J_{ij}\sim\mathcal N(0,1/N)$ for $i<j$. The maximum over starting configurations is taken after fixing the disorder, so the statement includes disorder-dependent starting states.
@@ -59,7 +63,7 @@ It specified the model and clock, quenched worst-case quantifiers, a primary tar
 
 ## How the proof was generated
 
-This was **an iterative AI-assisted proof search with human direction, followed by repeated AI audits**, rather than a completed proof from one response. The human supplied the detailed prompt, pressed for a proof after partial results, and requested a fresh audit and PDF. The AI developed and wrote the argument, using parallel agents for separate approaches and critical checks. The recovered record does not establish a verified model/version label, so none is assigned here.
+This was **almost entirely AI-generated proof development, with human prompting and repeated AI audits**. Qiang Wu supplied the detailed prompt, pressed for a proof after partial results, and requested a fresh audit and PDF. The AI developed and wrote the argument, using parallel agents for separate approaches and critical checks. The recovered record does not establish a verified model/version label, so none is assigned here.
 
 The recorded work rounds were:
 
