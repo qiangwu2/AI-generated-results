@@ -34,7 +34,7 @@
   "later_attachment_date_pacific": "2026-10-06",
   "history_basis": "Recovered conversation records and PDF metadata. Response completion timestamps do not establish first discovery or public priority. The recovered conversation begins with an existing manuscript.",
   "generation": {
-    "description": "Iterative AI proof development under human direction. The original September 20 research brief is preserved verbatim. The recovered September 21 conversation shows auditing, integration, and exposition revisions; the intervening development sequence is not fully reconstructed.",
+    "description": "Almost entirely AI-generated proof development, with human prompting and requests for audits and revisions. The original September 20 research brief is preserved verbatim. The recovered September 21 conversation shows auditing, integration, and exposition revisions; the intervening development sequence is not fully reconstructed.",
     "audit_responses_in_recovered_conversation": 1,
     "integration_or_exposition_revision_responses_in_recovered_conversation": 3,
     "one_shot_finished_proof": false,
@@ -73,5 +73,12 @@
     "sha256": "753aebb2c40514fe9a450e65baf6447774e4402ebc3a960cac1cee829984a741",
     "source_type": "Original pasted-text attachment identified in the development conversation.",
     "recovered_utc_date": "2026-10-07"
+  },
+  "human_contribution": {
+    "reported_by": "Qiang Wu",
+    "reported_date": "2026-10-07",
+    "date_timezone": "America/Los_Angeles",
+    "basis": "Direct statement by Qiang Wu for this repository disclosure.",
+    "statement": "I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials."
   }
 }

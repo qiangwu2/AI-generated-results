@@ -1,8 +1,12 @@
 # The Mézard–Parisi formula for the Viana–Bray model
 
-**Integrated edition: September 21, 2026 (Pacific time), 46 pages.** This folder preserves an AI-generated research manuscript developed through user-guided review and revision. The historical PDF is unchanged.
+**Integrated edition: September 21, 2026 (Pacific time), 46 pages.** This folder preserves an AI-generated research manuscript developed through AI proof generation, review, and revision in response to user prompts. The historical PDF is unchanged.
 
 **Audit status: proposed proof; complete verification remains pending.** The latest scope and hypothesis review did not demonstrate a mathematical gap or invalid inference in this edition. That limited review does not establish that the entire proof is correct or error-free.
+
+## Human contribution and AI generation
+
+I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials.
 
 ## Claimed result and proof approach
 
@@ -29,7 +33,7 @@ These records date the integrated edition, **not the first discovery of its unde
 
 ## How it was generated
 
-**Iterative AI proof development under human direction, rather than a one-shot finished proof.** In the recovered conversation, the user supplied the existing manuscript, requested a critical audit, then requested integration and clearer explanations. The assistant audited the precursor and produced successive integrated and expository revisions.
+**Almost entirely AI-generated proof development through repeated prompting, auditing, and revision.** In the recovered conversation, the user supplied the existing manuscript, requested a critical audit, then requested integration and clearer explanations. The assistant audited the precursor and produced successive integrated and expository revisions.
 
 That conversation contains one audit response and three integration or exposition revision responses. The original September 20 research brief has now been recovered and is preserved below; the complete sequence of intervening proof-development responses has not been reconstructed here. These are visible responses, not a count of all model calls or a complete account of how the original proof strategy arose.
 
