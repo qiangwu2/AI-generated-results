@@ -1,0 +1,181 @@
+Research task: Prove the full Mezard–Parisi formula for the Viana–Bray model
+
+## 1. Mathematical target
+
+Establish the finite-connectivity Mezard–Parisi variational formula below, including the low-temperature regime and without any finite-RSB hypothesis on the limiting Gibbs measure.
+
+Fix a connectivity parameter alpha >= 0, an inverse temperature beta >= 0, a dimensionless external field h in R, and a symmetric probability law nu supported on [-J0,J0], where J0 < infinity. These parameters and nu are independent of N. The Rademacher law nu = (delta_{-1}+delta_1)/2 is included.
+
+Let M_N be Poisson with mean alpha N. Let J_k be independent with law nu, and let i_k,j_k be independent uniform indices in {1,...,N}. All these variables are independent. Repeated edges and self-loops are allowed. Define
+
+\[
+Z_N=\sum_{\sigma\in\{-1,1\}^N}
+\exp\!\left(\beta\sum_{k=1}^{M_N}J_k\sigma_{i_k}\sigma_{j_k}
++h\sum_{i=1}^N\sigma_i\right),
+\qquad
+F_N=\frac1N\mathbb E\log Z_N.
+\]
+
+The expectation averages all quenched randomness. The sign convention is pressure, not minus pressure.
+
+Use the following finite-cascade definition of the trial functional. Choose an integer r >= 1 and parameters
+
+\[
+0<\zeta_0<\cdots<\zeta_{r-1}<1.
+\]
+
+On the rooted tree with leaves a in N^r, construct normalized Ruelle probability cascade weights v_a. Explicitly, at each vertex b of depth p<r, independently generate Poisson points on (0,infinity) with intensity zeta_p x^{-1-zeta_p} dx, ordered decreasingly as u_{bn}. Set
+
+\[
+w_a=\prod_{\ell=1}^{r}u_{a|\ell},
+\qquad
+v_a=\frac{w_a}{\sum_{c\in\mathbb N^r}w_c}.
+\]
+
+Here a|ell is the ancestor of a at depth ell.
+
+Choose a measurable function f:[0,1]^r -> [-1,1]. For each message-copy index I, generate independent uniform variables U_b^I at every non-root vertex, independently of the cascade. Set
+
+\[
+m_I^a=f(U_{a|1}^I,\ldots,U_{a|r}^I).
+\]
+
+Different message-copy indices give independent copies of the entire leaf-indexed array. Within a copy, leaves share precisely the variables on their common ancestral path.
+
+Define
+
+\[
+\psi_J(x,y)=\cosh(\beta J)\bigl(1+\tanh(\beta J)xy\bigr).
+\]
+
+Independently sample D ~ Poisson(2 alpha), K ~ Poisson(alpha), and fresh couplings with law nu. Using fresh message-array copies, set
+
+\[
+A_a=\sum_{\varepsilon=\pm1}e^{h\varepsilon}
+\prod_{k=1}^{D}\psi_{J_k}(\varepsilon,m_k^a),
+\qquad
+B_a=\prod_{k=1}^{K}
+\psi_{J'_k}(m_{k,1}^a,m_{k,2}^a).
+\]
+
+Counts and couplings are shared across the leaf labels within each expression. The two displayed constructions use disjoint message copies and independent counts and couplings. Empty products equal one.
+
+Put
+
+\[
+\mathcal P_{\alpha,\beta,h,\nu}(r,\zeta,f)
+=
+\mathbb E\log\sum_a v_aA_a
+-
+\mathbb E\log\sum_a v_aB_a.
+\]
+
+Prove, for every parameter choice specified above,
+
+\[
+\boxed{
+\lim_{N\to\infty}F_N
+=
+\inf_{\substack{r\ge1,\;0<\zeta_0<\cdots<\zeta_{r-1}<1\\
+f:[0,1]^r\to[-1,1]\ \mathrm{measurable}}}
+\mathcal P_{\alpha,\beta,h,\nu}(r,\zeta,f).
+}
+\]
+
+The infimum ranges over arbitrarily large finite depths. It imposes no bound on the number of overlap values of the actual model. Equivalent definitions of the functional are acceptable only after their equivalence is justified. [R1, R4]
+
+## 2. What constitutes a solution
+
+The requested result is an unconditional proof of this equality, including existence of the thermodynamic limit. A high-temperature theorem, a large-connectivity approximation, or a theorem conditional on finitely supported overlaps does not meet the target. Neither does another variational formula over a larger, unspecified class unless its value is proved equal to the displayed infimum.
+
+Organize the search around finding an affirmative proof. That working premise is not a mathematical assumption available inside the proof. Establish both inequalities, either directly or by combining a new argument with an exactly applicable published theorem.
+
+A reduction to multioverlap synchronization, hierarchical conditional independence, approximate cavity invariance, or another unproved structural statement is not a completed solution. Such statements become obligations of your argument, not new assumptions of the problem.
+
+## 3. Literature and prior claims
+
+The diluted interpolation bounds of Panchenko–Talagrand are an available starting point for the upper bound. Verify their normalization and hypotheses before invoking them. [R1]
+
+Panchenko's spin-distribution variational principle supplies a broader framework with invariance requirements. Do not silently replace its admissible class by the Mezard–Parisi class. [R2]
+
+Hierarchical exchangeability of pure states does not itself supply the full spin representation required by the Mezard–Parisi ansatz. Use the exact theorem, rather than an inferred stronger statement. [R3]
+
+The finite-RSB structural result uses actual finite-valued overlaps and particular cavity identities obtained through a small modification of the model. Any use beyond those hypotheses requires an additional proof. [R4]
+
+Consult primary sources for theorem statements and mathematical tools. Literature review is preparation, not the deliverable. Recheck earlier conversational calculations from first principles before using them. In particular, do not promote an earlier claimed approximation, stability estimate, or counterexample to an established theorem without auditing it.
+
+## 4. Autonomous research protocol
+
+When parallel research tools are genuinely available, distribute work across distinct mechanisms and separate proof verification from construction. Otherwise explore the alternatives sequentially. Do not invent workers, tool results, elapsed research time, or completed checks.
+
+Keep an explicit dependency graph for candidate proofs. Record each proposed lemma's hypotheses, conclusion, proof status, and role in deriving the target equality. Distinguish a new estimate from a renamed version of the original difficulty.
+
+Allocate further effort according to concrete mathematical progress. Do not repeatedly reproduce a cavity reduction whose decisive implication remains untouched. Test a different mechanism or directly attack that implication.
+
+Include routes that seek only the pressure lower bound, rather than first proving the complete structure of every asymptotic Gibbs measure. Conversely, accept a structural route when it demonstrably delivers the missing inequality.
+
+Use small cascades and finite-volume calculations to falsify proposed lemmas. Numerical agreement is a diagnostic, not a replacement for proof. Do not ask me to select an approach or authorize another attempt.
+
+## 5. Required mathematical audits
+
+### Overlaps and spin laws
+
+Whenever the proof replaces a spin law by its pair-overlap array, identify and prove the exact sufficiency statement being used. Track the multioverlaps
+
+\[
+R_{1,\ldots,k}=\frac1N\sum_{i=1}^N\prod_{\ell=1}^k\sigma_i^\ell
+\]
+
+or their limiting analogues wherever the cavity expansion requires them. Do not identify equality of pair-overlap distributions with equality of cavity functionals.
+
+If a representation contains global marks attached to individual states or clusters, their removal must follow from a proved identity or a proved variational inequality. Resampling those marks independently across sites is not automatically permissible. Test any claimed monotonicity on decorated one-step cascades with identical second moments and different higher moments.
+
+### Finite-depth approximation
+
+Rounding overlap values, collapsing clusters, and replacing profiles by barycentres are different operations. Specify which one is used, what probability law it produces, and which identities it preserves.
+
+For an error bound depending on depth r and resolution delta, exhibit a choice of parameters for which every needed error tends to zero. The phrase "first discretize, then pass to the limit" is insufficient without a valid order of limits or diagonal construction.
+
+Control the observables entering the logarithmic cavity functional, not merely a weaker overlap topology. Do not assume convergence of random normalized weights from convergence of their unnormalized numerators.
+
+### Perturbations and conditioning
+
+For every added perturbation, establish its pressure cost, the identities it enforces, and its effect on cavity increments. Explain how it is removed in the final formula.
+
+Keep track of whether an identity holds after averaging disorder, conditional on a genealogy, or for almost every fixed environment. Each strengthening of conditioning requires proof.
+
+Do not assume that identities obtained from different perturbations hold simultaneously for the same subsequential limit. If they are needed simultaneously, construct the sequence that enforces them together.
+
+### Analytic and variational details
+
+Justify logarithmic integrability, normalization denominators, Poisson-degree truncations, and exchanges of limits, expectations, derivatives, infinite sums, and infima. Prove any compactness or uniform-integrability input in the topology actually used.
+
+Track the direction of inequalities when enlarging or restricting a trial class. A class inclusion alone cannot establish equality of two infima.
+
+Verify the external-field convention, the vertex intensity 2 alpha, the edge intensity alpha, and the contribution of the cosh factors. Check alpha=0, beta=0, zero couplings, and h=0. A proof first obtained for generic parameters must include a justified extension to every parameter in the theorem.
+
+### Independent logical verification
+
+An independent checker should reconstruct the lower bound from its stated hypotheses without supplying unstated assumptions. Every new substantive lemma must have a proof. Every invoked theorem must be accurately cited and its hypotheses checked.
+
+In particular, reject circular arguments that assume the desired spin representation while constructing a perturbation, invoking a cascade identity, or identifying a cavity fixed point. A distributional cavity fixed-point equation is not enough unless its solution is connected to the thermodynamic pressure by a proved argument.
+
+## 6. Final deliverable
+
+Produce a mathematical manuscript containing the exact theorem, a short explanation of the decisive new idea, the supporting lemmas with proofs, the complete derivation of both variational inequalities, and all approximation and perturbation-removal arguments.
+
+Separate cited results from new results. Report the outcome of the proof audit, not a transcript of exploratory deliberations. The manuscript must make the new step beyond the existing bounds and finite-RSB results identifiable.
+
+Continue working through unsuccessful routes within the actual execution budget rather than replacing the requested proof with a menu of possible approaches. Do not use the problem's historical status as a reason to stop.
+
+Correctness takes precedence over producing an apparent solution. If an execution limit forces a return before the proof is complete, label the target unproved and state precisely which implication has not been established. Never disguise that implication as a routine technical step or an established lemma.
+
+## Primary mathematical references
+
+[R1] Dmitry Panchenko and Michel Talagrand, "Bounds for diluted mean-fields spin glass models," arXiv:math/0405357.
+
+[R2] Dmitry Panchenko, "Spin glass models from the point of view of spin distributions," arXiv:1005.2720.
+
+[R3] Dmitry Panchenko, "Hierarchical exchangeability of pure states in mean field spin glass models," arXiv:1307.2207.
+
+[R4] Dmitry Panchenko, "Structure of finite-RSB asymptotic Gibbs measures in the diluted spin glass models," arXiv:1406.4702.
