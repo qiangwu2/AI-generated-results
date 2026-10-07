@@ -1,0 +1,109 @@
+Research prompt: Cutoff for Glauber dynamics of the SK model
+This prompt adapts the precise task specification, independent proof search, and critical verification structure of the OpenAI Cycle Double Cover prompt. The SK formulation and mathematical requirements below are specific to this problem. A complete cutoff proof for every fixed \(0<\beta<1/4\) satisfies the task. The preferred stronger target is \(0<\beta<1/2\). Extending to \(\beta<1\) is optional.
+1. Current task statement
+Prove quenched, worst-case total-variation cutoff for the single-site heat-bath Glauber dynamics of the zero-field Sherrington–Kirkpatrick model in a specified high-temperature interval. Prioritize a complete proof for \(0<\beta<1/4\), and pursue \(0<\beta<1/2\) when the argument supports it.
+Use the following model and clock throughout. For each \(N\), let \(J=(J_{ij})_{i,j=1}^N\) be symmetric, with zero diagonal and independent entries \(J_{ij}\sim\mathcal N(0,1/N)\) for \(i<j\). On \(\Omega_N=\{-1,+1\}^N\), define
+\[
+\mu_{N,\beta,J}(\sigma)
+=\frac{1}{Z_{N,\beta,J}}
+\exp\!\left(\beta\sum_{1\le i<j\le N}J_{ij}\sigma_i\sigma_j\right),
+\]where \(Z_{N,\beta,J}\) is the normalizing constant and \(\beta\) is fixed independently of \(N\).
+Each site has an independent rate-one Poisson clock. When site \(i\) rings, replace its spin by \(s\in\{-1,+1\}\) with probability
+\[
+p_i(s\mid\sigma)
+=\frac{\exp(s\beta h_i(\sigma))}{2\cosh(\beta h_i(\sigma))},
+\qquad
+h_i(\sigma)=\sum_{j\ne i}J_{ij}\sigma_j.
+\]Writing \(\sigma^{i,s}\) for \(\sigma\) with coordinate \(i\) replaced by \(s\), the generator is
+\[
+\mathcal L_{N,\beta,J}f(\sigma)
+=\sum_{i=1}^N\left[
+\sum_{s=\pm1}p_i(s\mid\sigma)f(\sigma^{i,s})-f(\sigma)
+\right].
+\]Let \(P_t^J\) be its transition semigroup, suppressing \(N,\beta\) in this notation. Define
+\[
+\|\nu-\mu\|_{\mathrm{TV}}
+=\frac12\sum_{\eta\in\Omega_N}|\nu(\eta)-\mu(\eta)|,
+\qquad
+d_N^J(t)=\max_{\sigma\in\Omega_N}
+\|P_t^J(\sigma,\cdot)-\mu_{N,\beta,J}\|_{\mathrm{TV}},
+\]and
+\[
+t_{\mathrm{mix}}^{N,J}(\varepsilon)
+=\inf\{t\ge0:d_N^J(t)\le\varepsilon\}.
+\]The disorder \(J\) is sampled once and held fixed during the dynamics. Denote its law by \(\mathbb P_J\).
+Primary target. For every fixed \(\beta\in(0,1/4)\) and every fixed \(\varepsilon\in(0,1/2)\), prove
+\[
+\frac{t_{\mathrm{mix}}^{N,J}(\varepsilon)}
+{t_{\mathrm{mix}}^{N,J}(1-\varepsilon)}
+\xrightarrow[N\to\infty]{\mathbb P_J}1.
+\]Stronger target. Establish the same conclusion for every fixed \(\beta\in(0,1/2)\). A complete proof on either \((0,1/4)\) or \((0,1/2)\) counts as a successful resolution of this task. State exactly which interval is proved. Extension to \((0,1)\) is a separate optional objective and is not a condition for success.
+The maximum over initial states is taken after fixing \(J\). Consequently, the upper bound must cover initial configurations that depend on the disorder.
+Work toward an affirmative proof, but treat the assertion as a research target. Every assumption used in the proof must be stated or established. The task does not include \(\beta=1\), low temperature, \(\beta_N\uparrow1\), or external fields.
+2. Refine the location after establishing cutoff
+The cutoff ratio in Section 1 is the essential conclusion. As a refinement, seek a mathematically characterized center \(a_N(\beta)\) and a window \(w_N(\beta)>0\) with \(w_N/a_N\to0\), for \(\beta\) in the proved interval. An explicit leading constant, the smallest possible window, and a limiting profile are additional achievements rather than prerequisites for a complete cutoff theorem. For every fixed \(\delta\in(0,1)\), seek the quantitative bounds
+\[
+\lim_{c\to\infty}\limsup_{N\to\infty}
+\mathbb P_J\!\left(
+d_N^J\big((a_N-cw_N)_+\big)<1-\delta
+\right)=0,
+\]\[
+\lim_{c\to\infty}\limsup_{N\to\infty}
+\mathbb P_J\!\left(
+d_N^J(a_N+cw_N)>\delta
+\right)=0,
+\]where \(x_+=\max\{x,0\}\).
+Investigate whether \(a_N(\beta)\sim c(\beta)\log N\), and derive \(c(\beta)\) if this is correct. Determine how precisely the center must be specified for the proposed window. A diverging correction to the center cannot be discarded when claiming a bounded window.
+If a useful center must depend on \(J\), define it explicitly through a quantity whose asymptotics you can analyze and state the corresponding disorder-dependent version of these bounds. Defining the center as an unknown mixing time does not identify its location. Separate the primary cutoff claim from stronger claims about a deterministic center, an optimal window, or a limiting profile.
+As a clock check, derive the \(\beta=0\) benchmark directly: each coordinate retains bias \(e^{-t}\), and product-chain total-variation cutoff has center \(\frac12\log N\) and a window of order one. For the discrete chain that chooses one site uniformly at each step, the corresponding benchmark is \(\frac N2\log N\) with a window of order \(N\). Explain any transfer between these clocks, including the effect of Poisson fluctuations on a claimed window.
+3. Establish the starting point
+Verify the precise statements and hypotheses of any imported results. Two relevant starting references, checked in September 2026, are:
+- Sihan Wang, Optimal Mixing of Glauber Dynamics for the Sherrington–Kirkpatrick Model at \(\beta<1/2\), Theorem 1.1. The stated bound is \(O_\beta(N\log(N/\varepsilon))\) discrete updates, with high probability over disorder, from every initial state and uniformly over external fields.
+- Mathews Boban, Anqi Li, and Shayan Oveis Gharan, Rank-1-perturbed trickledown theorems, Theorem 1.5 and Corollary 1.6. The stated conclusions include an \(\Omega(1/N)\) discrete-time spectral gap and \(O(N^2)\) mixing for \(\beta<1/2+\eta\), for an absolute \(\eta>0\).
+These conclusions do not themselves give the displayed cutoff ratio. Use available results as inputs at their proved strength. Check subsequent revisions or relevant newer work before describing a result as new.
+Treat cutoff throughout \((0,1/4)\) as a complete success, even if the proof does not extend to \((0,1/2)\). Cutoff throughout \((0,1/2)\) is the preferred stronger success. An even smaller fixed positive-temperature interval is useful partial progress and must be labeled with its exact endpoint. In every case, proving only an \(O_\beta(N\log N)\) discrete-time mixing bound does not establish the requested cutoff theorem.
+4. Develop independent mathematical approaches
+Where multiple agents are available, use independent attempts on genuinely different mechanisms. Keep a short record of each approach's proved statement, required estimate, and obstruction. Allocate further effort according to concrete mathematical progress. Require a new idea before revisiting the same unresolved estimate.
+Useful directions to investigate include the following. They are proposals, not assumed facts about SK dynamics.
+A. Identify a statistic that detects the initial condition. Construct \(F_J:\Omega_N\to\mathbb R\) and an initial state \(\sigma_J\). Compute its evolving mean and control its variance both under the evolving law and under equilibrium. One sufficient route to the lower bound is
+\[
+\frac{
+\left|\mathbb E_{\sigma_J}^{J}F_J(X_t)
+-\mu_{N,\beta,J}(F_J)\right|
+}{
+\sqrt{\operatorname{Var}_{\sigma_J}^{J}(F_J(X_t))}
++\sqrt{\operatorname{Var}_{\mu_{N,\beta,J}}(F_J)}
+}\longrightarrow\infty
+\]at suitably early times, on disorder events of probability tending to one. Here \(X_t\) denotes the chain and \(\mathbb E_{\sigma_J}^{J}\) conditions on the fixed disorder and initial state. Explore linear statistics \(F_J(\sigma)=\sum_i v_i(J)\sigma_i\), nonlinear statistics, or multiple modes. Justify the choice rather than assuming the total magnetization is the slowest observable.
+B. Analyze the evolution on the mixing time scale. For \(m_i(t)=\mathbb E_{\sigma}^{J}X_i(t)\), begin from the exact equation
+\[
+\frac{d}{dt}m_i(t)
+=-m_i(t)+
+\mathbb E_{\sigma}^{J}\!\left[
+\tanh\!\left(\beta\sum_{j\ne i}J_{ij}X_j(t)\right)
+\right].
+\]Investigate a controlled closure or a larger system of observables. Any cavity approximation, linear response calculation, or effective evolution must include an error estimate valid over the entire required time interval. An approximation valid only for fixed times does not automatically apply at times growing like \(\log N\). Account for the dependence of the trajectory on the same disorder appearing in the local fields.
+C. Obtain an upper bound at the same location. Investigate direct couplings, evolution of relative densities, entropy or \(L^2\) estimates, or decompositions into dynamical modes. Display an explicit inequality controlling \(d_N^J(t)\). Explain why it gives the same leading location as the lower bound and covers every initial configuration. Track any initial equilibration phase at the precision needed for the window.
+D. Trace dependencies through the update history. Explore whether an exact graphical construction can quantify how information from the initial state survives. Define the construction for signed SK interactions. Any benefit from cancellation must survive the conditioning and nonlinear operations actually used in the proof.
+E. Extend the temperature range when feasible. For a proof on \((0,1/4)\), identify the exact inequality limiting its validity and investigate whether it can be improved to reach \((0,1/2)\). Possible inputs include equilibrium covariance estimates, collective observables, or a different dynamical comparison. Explain which additional estimate is required. Preserve and write up a completed proof on the accepted smaller interval even if this extension fails. Explore \((0,1)\) only as a further optional extension.
+5. Audit the SK-specific difficulties
+Assign independent reviewers to challenge the crucial steps. In particular, check:
+1. Quenched uniformity. A disorder estimate for one prescribed initial state does not automatically hold simultaneously for all \(2^N\) states. Establish the needed uniformity before taking the maximum.
+2. Dependence on disorder. Initial states, observables, spin trajectories, and conditioning events may all depend on \(J\). Gaussian independence or cancellation cannot be invoked after conditioning without justification.
+3. Signed interactions. Verify the assumptions of every monotonicity, coupling, censoring, or correlation inequality. A theorem requiring nonnegative couplings needs a separate justification or replacement.
+4. Local fields. Small individual couplings do not imply uniformly small local fields over all configurations. Any Taylor expansion must specify the region where it is valid and bound the time and probability spent outside it.
+5. Dynamics versus equilibrium. A static covariance matrix, a free-energy Hessian, and the Glauber generator are distinct objects. Prove each comparison used to extract a relaxation rate or a cutoff constant.
+6. Sharpness. A spectral-gap bound, an order-of-magnitude mixing estimate, or the condition that relaxation time is negligible compared with mixing time does not, by itself, prove cutoff. Locate the matching lower and upper estimates in the argument.
+7. Metrics and initialization. Explain the conversion of every Wasserstein, entropy, or \(L^2\) estimate into the required total-variation statement. Include the cost of reaching any specially chosen initial distribution.
+8. Accumulated errors. Sum errors over sites, time intervals, modes, and exceptional events. Verify that the final error is small enough at the proposed transition window.
+9. Temperature quantifiers. Constants may depend on fixed \(\beta\) in the claimed interval. Uniformity as \(\beta\) approaches its endpoint is not required. The theorem must cover every fixed positive \(\beta\) in that interval. A proof requiring \(\beta_N\to0\) is a weaker result and must be labeled accordingly.
+Use computations to challenge proposed identities and lemmas. Finite-size agreement supplies evidence for a conjecture, not its asymptotic proof.
+6. Required final output
+Present the result in the following order:
+1. A theorem giving the proved temperature range, clock, disorder quantifiers, cutoff statement, and any location or window established.
+2. A short proof outline showing the main mathematical steps and the explicit inequalities connecting them.
+3. Complete proofs of the new lemmas, with precise citations for imported theorems and verification of their hypotheses.
+4. Matching upper and lower bounds, followed by their combination into the cutoff conclusion.
+5. If relevant, a concise account of possible extensions beyond the proved interval. Failure to establish an optional extension does not invalidate a completed theorem on an accepted interval.
+Write for a second-year graduate student in probability. Define symbols before use and explain the purpose of each new object. Distinguish proved assertions from conjectural mechanisms throughout.
+Continue developing and checking alternatives when a route fails. Use the resources actually available, and report only work actually performed. Once a complete cutoff proof on \((0,1/4)\) or \((0,1/2)\) survives critical checking, present it as a successful resolution. Do not withhold it because a wider temperature range, sharper location, or smaller window remains unresolved. If an essential step in the cutoff proof itself remains unproved, give its exact statement and the strongest theorem actually established, and state that the requested cutoff theorem has not yet been proved. Do not claim a solution on the strength of a plausible approximation or an unproved reduction.

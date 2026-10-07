@@ -1,0 +1,57 @@
+{
+  "title": "Cutoff for SK Glauber dynamics at fixed inverse temperature below 1/3",
+  "source_chat": {
+    "title": "Prove SK Glauber cutoff",
+    "thread_id": "01a0d065-3e1a-77b2-9026-1849b843208d",
+    "platform": "Codex",
+    "model_version": "not verified from recovered record"
+  },
+  "manuscript_date": "2026-09-23",
+  "date_convention": "America/Los_Angeles (UTC-07:00); final proof and audited PDF completed on 2026-09-24 UTC",
+  "archive_date_local": "2026-10-06",
+  "archive_date_utc": "2026-10-07",
+  "pdf_pages": 10,
+  "work_rounds": [
+    {
+      "stage": "initial partial result",
+      "started_at_utc": "2026-09-23T22:31:31+00:00",
+      "completed_at_utc": "2026-09-23T23:11:26+00:00"
+    },
+    {
+      "stage": "fixed-temperature partial result",
+      "started_at_utc": "2026-09-23T23:23:21+00:00",
+      "completed_at_utc": "2026-09-23T23:57:49+00:00"
+    },
+    {
+      "stage": "completed cutoff argument reported",
+      "started_at_utc": "2026-09-24T00:15:28+00:00",
+      "completed_at_utc": "2026-09-24T01:09:17+00:00"
+    },
+    {
+      "stage": "fresh audit and revised PDF",
+      "started_at_utc": "2026-09-24T01:56:43+00:00",
+      "completed_at_utc": "2026-09-24T02:12:05+00:00"
+    }
+  ],
+  "generation": "Detailed human research prompt; iterative AI proof search with human follow-ups; parallel AI reviews and finite-state numerical checks. Not a one-response finished proof.",
+  "audit": "September 23 report records no remaining mathematical gap found in revised proof for fixed 0<beta<1/3. No formal proof certificate or independent human peer review. No new full audit performed for this archival addition.",
+  "lean_formalized": false,
+  "unchanged_source_files": {
+    "sk_cutoff_proof.pdf": {
+      "bytes": 293553,
+      "sha256": "d6bae129f7cc4ebebbe2812a0a8a50f9c080ea978a6a4d919ed2f74407a6a5ef"
+    },
+    "sk_cutoff_source.zip": {
+      "bytes": 114596,
+      "sha256": "21433415d2fd6a644db965d613ceb255b20731ddd9b25c8015c6596ad20b4adb"
+    },
+    "ORIGINAL-PROMPT.txt": {
+      "bytes": 13546,
+      "sha256": "794756e5942e6993631443807591209105a8ff19a2581869e3d1338dec7fe32e"
+    },
+    "AUDIT-2026-09-23.md": {
+      "bytes": 5087,
+      "sha256": "05652e861028adc4643065a5f8e9a80b9bfda5c6e80306ca320b4365dd91a135"
+    }
+  }
+}
