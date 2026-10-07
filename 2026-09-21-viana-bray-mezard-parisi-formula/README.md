@@ -6,7 +6,9 @@
 
 ## Human contribution and AI generation
 
-I, Qiang Wu, made almost zero mathematical contribution to this proof beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain it. The proof development and writing were almost entirely AI-generated. My role was to request the result, ask for audits and revisions, and organize the resulting materials.
+The proofs in this repository were generated almost entirely by AI. My role was primarily to prompt the models and request further work, audits, and revisions. I barely contributed any mathematical insights, proof ideas, or proof strategies.
+
+The proofs have been reviewed by AI. Due to limited computational resources, we have only been able to verify parts of them in Lean. Where provided, this verification covers the formalized statements and is conditional on explicitly stated assumptions. These checks do not guarantee that the complete proofs are correct or free of gaps. Please use the results with caution.
 
 ## Claimed result and proof approach
 
