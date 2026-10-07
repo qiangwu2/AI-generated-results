@@ -2,6 +2,10 @@
 
 AI-generated proofs and mathematical results.
 
+## Human contribution and AI generation
+
+I, Qiang Wu, made almost zero mathematical contribution to the proofs archived here beyond prompting the AI models. I did not provide the mathematical insights, proof ideas, or strategies used to obtain the proofs. The proof development and writing were almost entirely AI-generated. My role was to request results, ask for audits and revisions, and organize the resulting materials.
+
 ## Results
 
 - [Initial full-RSB interval for SK at positive temperature](2026-07-14-sk-positive-temperature-initial-frsb/) — developed in July 14, 2026 (UTC) ChatGPT sessions; revised 34-page manuscript and October 6, 2026 audit. The folder records the result’s scope, history, sources, and remaining local corrections.
