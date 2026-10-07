@@ -1,0 +1,53 @@
+{
+  "title": "The Mézard–Parisi formula for the Viana–Bray model",
+  "archive_created_utc": "2026-10-07",
+  "archive_created_pacific_date": "2026-10-06",
+  "edition": {
+    "filename": "viana_bray_integrated.pdf",
+    "original_recovered_filename": "viana_bray_integrated-1.pdf",
+    "pages": 46,
+    "bytes": 736156,
+    "sha256": "f8ed24c0d8d95729abb88b9d51bd246c7dcb060d95c1431b8bd4261de6185712",
+    "preserved_unchanged": true,
+    "printed_manuscript_date": null,
+    "pdf_creation_metadata_utc": "2026-09-22T05:46:59Z",
+    "pdf_creation_metadata_pacific": "2026-09-21T22:46:59-07:00"
+  },
+  "chronology": [
+    {
+      "response_completed_pacific": "2026-09-21T15:00:03-07:00",
+      "description": "Favorable AI audit of uploaded 59-page precursor, comprising a 40-page manuscript and 19-page expanded-proof supplement."
+    },
+    {
+      "response_completed_pacific": "2026-09-21T15:29:35-07:00",
+      "description": "45-page integrated manuscript."
+    },
+    {
+      "response_completed_pacific": "2026-09-21T15:57:23-07:00",
+      "description": "46-page revision of Sections 1.4–1.5."
+    },
+    {
+      "response_completed_pacific": "2026-09-21T22:48:38-07:00",
+      "description": "Further revision of Section 1.5; latest integrated PDF supplied."
+    }
+  ],
+  "later_attachment_date_pacific": "2026-10-06",
+  "history_basis": "Recovered conversation records and PDF metadata. Response completion timestamps do not establish first discovery or public priority. The recovered conversation begins with an existing manuscript.",
+  "generation": {
+    "description": "Iterative AI proof development under human direction. The recovered conversation shows auditing, integration, and exposition revisions. Earlier development is not fully reconstructed.",
+    "audit_responses_in_recovered_conversation": 1,
+    "integration_or_exposition_revision_responses_in_recovered_conversation": 3,
+    "one_shot_finished_proof": false,
+    "total_model_call_count_known": false
+  },
+  "claimed_scope": "Viana–Bray free-energy formula for bounded symmetric couplings, fixed dimensionless field and fixed finite connectivity and inverse temperature; infimum over finite-depth RPC trials with deterministic measurable messages and independent site-mark trees, allowing depth to grow.",
+  "audit": {
+    "scope_review_updated_utc": "2026-10-07T01:28:35.872780Z",
+    "full_formula_verified": false,
+    "mathematical_gap_demonstrated": false,
+    "scope": "Source statements and hypotheses, including direct reading of Sections 4–5 and Theorem 1.1; not an end-to-end manuscript certification.",
+    "boundary": "No counterexample or invalid inference established. Pending formalization and application obligations do not themselves demonstrate a mathematical gap. Precursor audit is not a separate full audit of this edition.",
+    "completed_formal_verification_of_full_formula": false,
+    "separate_older_46_page_scope_audited_draft": true
+  }
+}
