@@ -8,7 +8,7 @@
 
 The proofs in this repository were generated almost entirely by AI. My role was primarily to prompt the models and request further work, audits, and revisions. I barely contributed any mathematical insights, proof ideas, or proof strategies.
 
-I take neither credit nor responsibility for these results, as I have not had time to carefully check the proofs myself.
+I take zero credit and $\varepsilon$ responsibility for these results, as I have not had time to carefully check the proofs myself.
 
 The results have undergone several rounds of AI auditing and revision. Within the scope of those reviews, no obvious unresolved substantive errors or gaps were identified. Known local corrections and checks that remain incomplete are summarized in each result's README.
 
