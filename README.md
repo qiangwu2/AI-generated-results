@@ -14,7 +14,6 @@ Due to limited computational resources, we have only been able to verify parts o
 
 ## Results
 
-- [Inverse freezing in the Ghatak–Sherrington model](ghatak-sherrington-inverse-freezing/) — revised 21-page manuscript dated October 7, 2026, based on a recovered August 3 edition. Paramagnetism at high and low temperatures and an intermediate RSB interval, with each conclusion holding at every global maximizing density; repeated AI audits found no remaining substantive gap within their scope. No accompanying Lean formalization.
 - [Initial full-RSB interval for SK at positive temperature](2026-07-14-sk-positive-temperature-initial-frsb/) — developed in July 14, 2026 (UTC) ChatGPT sessions; revised 34-page manuscript and October 6, 2026 audit. The folder records the result’s scope, history, sources, and remaining local corrections.
 - [Mézard–Parisi formula for the Viana–Bray model](2026-09-21-viana-bray-mezard-parisi-formula/) — 46-page integrated edition from September 21, 2026 (Pacific time), with generation history and an audit summary. Proposed proof: no mathematical gap demonstrated in the latest limited review; complete verification remains pending.
 - [Cutoff for SK Glauber dynamics at fixed inverse temperature below 1/3](2026-09-23-sk-glauber-cutoff/) — 10-page manuscript developed September 23, 2026 (Pacific time), with a bounded mixing window, the original research prompt, generation history, and contemporaneous AI audits reporting no remaining gap found; not formally verified.
