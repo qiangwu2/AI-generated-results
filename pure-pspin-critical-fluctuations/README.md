@@ -2,7 +2,6 @@
 
 [GitHub](https://github.com/qiangwu2/AI-generated-results/tree/main/pure-pspin-critical-fluctuations) · [PDF](https://github.com/qiangwu2/AI-generated-results/blob/main/pure-pspin-critical-fluctuations/pure-pspin-critical-fluctuations.pdf)
 
-**Author:** Qiang Wu
 
 **Manuscript:** October 2026 · 83 pages
 
